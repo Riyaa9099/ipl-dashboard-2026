@@ -1,4 +1,4 @@
-# 🏏 TATA IPL Analytics Dashboard (2008–2026)
+#  TATA IPL Analytics Dashboard (2008–2026)
 
 ![React](https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react&logoColor=black)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
@@ -7,32 +7,32 @@
 
 An interactive cricket analytics dashboard covering **19 seasons of the Indian Premier League (2008–2026)** across **1,243 matches** and **295,000+ ball-by-ball deliveries**. Built with a single-click Season Slicer that dynamically updates every KPI, player spotlight, points table, phase breakdown, and match record.
 
-🔗 **Live Dashboard:** https://riyaa9099.github.io/ipl-dashboard-2026/
+ **Live Dashboard:** https://riyaa9099.github.io/ipl-dashboard-2026/
 
 ---
 
-## 📊 Key Highlights (IPL 2026 Snapshot)
+## Key Highlights (IPL 2026 Snapshot)
 
-### 🏆 Championship Finale
+### Championship Finale
 | Result | Team | Score | Venue |
 | :--- | :--- | :--- | :--- |
 | **Champion** | Royal Challengers Bengaluru (RCB) | 161/5 (18.0) | Narendra Modi Stadium, Ahmedabad |
 | **Runner-Up** | Gujarat Titans (GT) | 155/8 (20.0) | *RCB won by 5 wickets · POM: V Kohli* |
 
-### 📈 Season KPIs (2026)
+### Season KPIs (2026)
 | Total Matches | Total Teams | Total Venues | Total Sixes | Total Fours | Centuries | Half-Centuries |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | **74** | **10** | **13** | **1,426** | **2,333** | **15** | **154** |
 
-### 🌟 Player Spotlights (2026)
-- 🟠 **Orange Cap:** Vaibhav Suryavanshi — **776 runs** *(Rajasthan Royals)*
-- 🟣 **Purple Cap:** Kagiso Rabada — **29 wickets** *(Gujarat Titans)*
-- ⚡ **Most Fours:** B Sai Sudharsan — **75 fours** *(Gujarat Titans)*
-- 🔥 **Most Sixes:** Vaibhav Suryavanshi — **72 sixes** *(Rajasthan Royals)*
+### Player Spotlights (2026)
+- **Orange Cap:** Vaibhav Suryavanshi — **776 runs** *(Rajasthan Royals)*
+- **Purple Cap:** Kagiso Rabada — **29 wickets** *(Gujarat Titans)*
+- **Most Fours:** B Sai Sudharsan — **75 fours** *(Gujarat Titans)*
+- **Most Sixes:** Vaibhav Suryavanshi — **72 sixes** *(Rajasthan Royals)*
 
 ---
 
-## 🎯 Dashboard Views
+##  Dashboard Views
 
 - **Season Overview:** Champion & Runner-Up hero banner, 7 season KPIs with YoY deltas, 4 Player Spotlight cards, Official Points Table (with NRR & click-through team campaign modal), Playoff results, and Powerplay / Middle / Death scoring rates.
 - **Leaderboards:** Top 20 Run Scorers & Top 20 Wicket Takers with interactive bar charts, player search, and a Season Centuries wall.
@@ -41,14 +41,14 @@ An interactive cricket analytics dashboard covering **19 seasons of the Indian P
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Frontend:** React 18, TypeScript, Vite, Tailwind CSS, Recharts, Lucide Icons
 - **Data Pipeline:** Python, Pandas, `pbixray`, Cricsheet IPL ball-by-ball & match archives (2008–2026)
 
 ---
 
-## 🚀 Run Locally
+## Run Locally
 
 ```bash
 git clone https://github.com/Riyaa9099/ipl-dashboard-2026.git
