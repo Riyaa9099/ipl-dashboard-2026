@@ -1,48 +1,58 @@
 # 🏏 TATA IPL Analytics Dashboard (2008–2026)
 
-An interactive, broadcast-grade cricket analytics dashboard covering **19 seasons of the Indian Premier League (2008–2026)** — 1,243 matches and 295,000+ ball-by-ball deliveries — upgraded from the original Power BI project (`2008–2025`) to include the complete **IPL 2026** season and an interactive React + Tailwind + Recharts web experience.
+![React](https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
+![Recharts](https://img.shields.io/badge/Recharts-Data_Viz-22B5BF?style=for-the-badge)
 
-## ✨ Features
+An interactive cricket analytics dashboard covering **19 seasons of the Indian Premier League (2008–2026)** across **1,243 matches** and **295,000+ ball-by-ball deliveries**. Built with a single-click Season Slicer that dynamically updates every KPI, player spotlight, points table, phase breakdown, and match record.
 
-- **Single-Click Season Slicer (`2008`–`2026` + `All-Time`)**: Dynamically updates every KPI, player spotlight, points table, phase breakdown, leaderboard, venue chart, and match fixture list.
-- **Season Overview**:
-  - **Champion & Runner-Up Duel Banner** with team logos, grand finale scores, margin, venue, and Player of the Final.
-  - **7 Secondary KPIs**: Total Sixes, Total Fours, Total Matches, Total Teams, Centuries (100s), Half-Centuries (50s), Total Venues — with season-over-season delta badges.
-  - **4 Player Spotlight Cards**: Orange Cap, Purple Cap, Most Fours, and Most Sixes with player portraits and efficiency stats.
-  - **Official IPL Points Table**: Played, Won, Lost, NR, Net Run Rate (NRR), Points, Playoff qualification (`Q`) & Champion (`C`) indicators, plus click-through Team Campaign Modal (`Esc` to close).
-  - **Phase Scoring Breakdown**: Powerplay (1–6), Middle (7–15), and Death (16–20) run rates, wickets, and boundary %.
-- **Leaderboards**: Top 20 Batters & Top 20 Bowlers with interactive charts, search, and Season Centuries wall.
-- **2008–2026 Historical Trends**: 19-season boundary explosion, scoring tempo (RPO & sixes/match), Franchise Trophy Cabinet, and interactive Head-to-Head Rivalry Explorer.
-- **Venues & Match Center**: Bat-first vs Chase win bias, stadium scoring profiles, and full match-by-match explorer.
+🔗 **Live Dashboard:** https://riyaa9099.github.io/ipl-dashboard-2026/
+
+---
+
+## 📊 Key Highlights (IPL 2026 Snapshot)
+
+### 🏆 Championship Finale
+| Result | Team | Score | Venue |
+| :--- | :--- | :--- | :--- |
+| **Champion** | Royal Challengers Bengaluru (RCB) | 161/5 (18.0) | Narendra Modi Stadium, Ahmedabad |
+| **Runner-Up** | Gujarat Titans (GT) | 155/8 (20.0) | *RCB won by 5 wickets · POM: V Kohli* |
+
+### 📈 Season KPIs (2026)
+| Total Matches | Total Teams | Total Venues | Total Sixes | Total Fours | Centuries | Half-Centuries |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| **74** | **10** | **13** | **1,426** | **2,333** | **15** | **154** |
+
+### 🌟 Player Spotlights (2026)
+- 🟠 **Orange Cap:** Vaibhav Suryavanshi — **776 runs** *(Rajasthan Royals)*
+- 🟣 **Purple Cap:** Kagiso Rabada — **29 wickets** *(Gujarat Titans)*
+- ⚡ **Most Fours:** B Sai Sudharsan — **75 fours** *(Gujarat Titans)*
+- 🔥 **Most Sixes:** Vaibhav Suryavanshi — **72 sixes** *(Rajasthan Royals)*
+
+---
+
+## 🎯 Dashboard Views
+
+- **Season Overview:** Champion & Runner-Up hero banner, 7 season KPIs with YoY deltas, 4 Player Spotlight cards, Official Points Table (with NRR & click-through team campaign modal), Playoff results, and Powerplay / Middle / Death scoring rates.
+- **Leaderboards:** Top 20 Run Scorers & Top 20 Wicket Takers with interactive bar charts, player search, and a Season Centuries wall.
+- **2008–2026 Trends:** 19-season boundary growth, Run Rate vs Sixes/Match evolution, Franchise Trophy Cabinet, and an interactive Head-to-Head Rivalry Explorer.
+- **Venues & Matches:** Bat-first vs Chase win bias, stadium scoring profiles, and a searchable Match Center filtered by team and stage.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend:** React 18, TypeScript, Vite, Tailwind CSS, Recharts, Lucide Icons
+- **Data Pipeline:** Python, Pandas, `pbixray`, Cricsheet IPL ball-by-ball & match archives (2008–2026)
+
+---
 
 ## 🚀 Run Locally
 
 ```bash
+git clone https://github.com/Riyaa9099/ipl-dashboard-2026.git
+cd ipl-dashboard-2026
 npm install
 npm run dev
-```
-
-## 🌐 Push to GitHub & Get Your Live Link (GitHub Pages)
-
-This repository includes a pre-configured **GitHub Actions workflow** (`.github/workflows/deploy.yml`) and relative asset base (`base: './'`) so it deploys automatically to GitHub Pages when pushed to `main`:
-
-1. Create a new empty repository on GitHub (e.g., `ipl-dashboard-2026`).
-2. Push this project:
-   ```bash
-   git remote add origin https://github.com/<YOUR_USERNAME>/ipl-dashboard-2026.git
-   git branch -M main
-   git push -u origin main
-   ```
-3. On GitHub, open **Settings → Pages → Build and deployment → Source** and select **GitHub Actions**.
-4. Your live dashboard will be published at:
-   `https://<YOUR_USERNAME>.github.io/ipl-dashboard-2026/`
-
-*(Alternatively, import the GitHub repo directly on [Vercel](https://vercel.com) or [Netlify](https://app.netlify.com) with build command `npm run build` and output directory `dist`.)*
-
-## 📊 Updated Power BI Datasets (`data/ipl_2026_dataset/`)
-
-Clean 2008–2026 match & team CSVs are included in `data/ipl_2026_dataset/`. To regenerate the full `ball_by_ball_data_2026.csv` and `src/data/ipl_dashboard_data.json` from Cricsheet sources:
-
-```bash
-python scripts/build_dataset.py
 ```
