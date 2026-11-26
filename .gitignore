@@ -1,0 +1,13 @@
+node_modules/
+dist/
+.vite/
+*.log
+.DS_Store
+Thumbs.db
+
+# Intermediate / large raw data caches (regenerable via scripts/build_dataset.py)
+pbix_extracted/
+data/cricsheet/
+data/raw/
+data/ipl_2026_dataset/ball_by_ball_data_2026.csv
+IPL_PowerBI_Dashboard-main/

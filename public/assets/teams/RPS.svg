@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <defs>
+    <linearGradient id="g_RPS" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#A855F7"/>
+      <stop offset="100%" stop-color="#F43F5E"/>
+    </linearGradient>
+  </defs>
+  <polygon points="60,6 108,28 100,88 60,114 20,88 12,28" fill="url(#g_RPS)" stroke="#ffffff" stroke-opacity="0.35" stroke-width="4"/>
+  <text x="60" y="70" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="28" fill="#ffffff" letter-spacing="1">RPS</text>
+</svg>
